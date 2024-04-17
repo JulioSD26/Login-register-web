@@ -1,4 +1,5 @@
 document.getElementById("btn__registrarse").addEventListener("click", register);
+document.getElementById("btn__iniciar-sesion").addEventListener("click", iniciarSesion);
 
 // Declaración de variables
 var formulario_login = document.querySelector('.formulario__login');
@@ -13,4 +14,12 @@ function register() {
     formulario_login.style.display = 'none';
     caja_trasera_register.style.opacity = '0';
     caja_trasera_login.style.opacity = '1';
+}
+
+function iniciarSesion() {
+    formulario_register.style.display = 'none';
+    contenedor_login_register.style.left = '10px';
+    formulario_login.style.display = 'block';
+    caja_trasera_register.style.opacity = '1';
+    caja_trasera_login.style.opacity = '0';
 }
