@@ -29,7 +29,7 @@
     if(mysqli_num_rows($verificar_usuario) > 0){
         echo '<script>
             alert("Este usuario ya está registrado, intenta con otro");
-            window.location = "../index.php";
+            window.location = "../bienvenido.php";
             </script>';
         mysqli_close($conexion);
         exit();
