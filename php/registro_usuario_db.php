@@ -6,6 +6,8 @@
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];
     $contrasena = $_POST['contrasena'];
+    // encriptar la contraseña
+    $contrasena = hash('sha512', $contrasena);
 
     // consulta para insertar datos en la base de datos de la tabla usuarios
     $query = "INSERT INTO usuarios(nombre_completo, correo, usuario, contrasena)
