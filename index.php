@@ -27,10 +27,10 @@
             </div>
 
             <div class="contenedor__login-register">
-                <form action="" class="formulario__login">
+                <form action="php/login_usuario_db.php" method="post" class="formulario__login">
                     <h2>Iniciar sesión</h2>
-                    <input type="text" placeholder="Correo electronico">
-                    <input type="password" placeholder="Contraseña">
+                    <input type="text" placeholder="Correo electronico" name="correo">
+                    <input type="password" placeholder="Contraseña" name="contrasena">
                     <button>Entrar</button>
                 </form>
 
