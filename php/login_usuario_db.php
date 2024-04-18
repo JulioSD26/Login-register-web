@@ -9,7 +9,7 @@
     WHERE correo = '$correo' AND contrasena = '$contrasena'");
 
     if(mysqli_num_rows($validar_login) > 0){
-        header("location: ../bienvenido.php");
+        header("location: bienvenido.php");
         exit();
     } else {
         echo '<script>
