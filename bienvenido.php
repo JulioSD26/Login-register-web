@@ -18,9 +18,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bienvenido</title>
+    <link rel="stylesheet" href="assets/css/estilo-bienvenidos.css">
 </head>
 <body>
-    <h1>Bienvenido</h1>
+    <h1>
+        Bienvenido
+        <?php echo $_SESSION['nombre'];
+        ?>
+    </h1>
+    
     <a href="php/cerrar_sesion.php">cerrar sesión</a>
 </body>
 </html>

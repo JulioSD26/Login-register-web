@@ -43,7 +43,7 @@
 
     if($ejecutar){
         echo '<script>
-            alert("Usuario almacenado exitosamente");
+            alert("Inicia sesión para entrar con tu nueva cuenta");
             window.location = "../index.php";
             </script>';
     } else {

@@ -13,6 +13,10 @@
 
     if(mysqli_num_rows($validar_login) > 0){
         $_SESSION['usuario'] = $correo;
+
+        // obtener nombre_completo del usuario de la base de datos
+        $nombre = mysqli_fetch_array($validar_login);
+        $_SESSION['nombre'] = $nombre['nombre_completo'];
         header("location: ../bienvenido.php");
         exit();
     } else {
