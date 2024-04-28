@@ -10,8 +10,10 @@
         
         // Si la conexión es exitosa, muestra un mensaje
         echo "Conexión exitosa";
+        $mensaje = "";
     } catch (Exception $e) {
         // Si se produce un error, muestra un mensaje de alerta
         echo '<script>alert("' . $e->getMessage() . '");</script>';
+        $mensaje = "Error al conectar a la base de datos";
     }
 ?>
