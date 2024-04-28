@@ -2,6 +2,10 @@
 
     include 'conexion_db.php';
 
+    if(!$conexion){
+        header("location: ../index.php");
+    }
+
     $nombre_completo = $_POST['nombre_completo'];
     $correo = $_POST['correo'];
     $usuario = $_POST['usuario'];
